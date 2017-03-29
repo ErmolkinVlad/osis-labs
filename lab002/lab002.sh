@@ -44,6 +44,8 @@ function join_by { local IFS="$1"; shift; echo "$*"; }
 
 function print(){
   for ((i=1;i<=21;i++)) do
+    echo -n "                                                 "
+    
     for ((j=1;j<=41;j++)) do      
       x=$(((($j - 1)) / 10 + 1))
       y=$(((($i - 1)) / 5 + 1))
